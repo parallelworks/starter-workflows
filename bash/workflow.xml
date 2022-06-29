@@ -1,0 +1,21 @@
+<tool id='User.Demo_say_hello' name='User.Demo_say_hello'>
+  <command interpreter='bash'>main.sh</command>
+  <inputs>
+    <section name='jupyter' type='section' conditional='[object Object],[object Object]' title='JupyterLab' expanded='true'>
+      <param name='password' label='JupyterLab temporary password' type='text' help='Use this password to connect with your browser. Do not enter your PW password!' value='EnterPassword' width='50%_none'>
+      </param>
+      <param name='jupyter_lab_dir' label='JupyterLab directory' type='text' value='/contrib/\${USER}' width='50%_none'>
+      </param>
+      <param name='jport' label='Port number' type='integer' min='8888' max='65000' value='8888' width='50%'>
+      </param>
+    </section>
+    <section name='advanced' type='section' title='Advanced Options' expanded='false'>
+      <param name='node_mem_limit' type='boolean' truevalue='Yes' falsevalue='No' checked='false' label='Limit compute node memory' help='Select yes for Dask. Only works in GCP' width='50%_none' optional='true' float='right'>
+      </param>
+      <param name='remote_dir' label='Path to start_jupyterlab job sratch directory' type='text' value='/contrib/\${USER}/start_jupyterlab' help='If compute node is selected this must be a shared directory!' width='50%_none'>
+      </param>
+    </section>
+  </inputs>
+  <outputs>
+  </outputs>
+</tool>

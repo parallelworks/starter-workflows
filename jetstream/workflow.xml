@@ -1,0 +1,15 @@
+<tool id='test_jetstream' name='test_jetstream'>
+  <command interpreter='jetstream'>main.jst</command>
+  <inputs>
+    <param name='linear_dir' type='text' value='linear' width='50%'>
+    </param>
+    <param name='noise_dir' type='text' value='noise' width='50%'>
+    </param>
+    <param name='num_samples' type='integer' value='3' min='1' max='50'>
+    </param>
+  </inputs>
+  <outputs>
+    <data name='sum_file' format='txt' label='jst-${time.strftime("%Y%m%d-%H%M%S", time.gmtime())}.sum'>
+    </data>
+  </outputs>
+</tool>
