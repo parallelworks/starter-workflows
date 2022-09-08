@@ -1,0 +1,6 @@
+{
+    "repo": "https://github.com/parallelworks/interactive_session.git",
+    "branch": "main",
+    "dir": "workflow",
+    "xml": "workflow/workflow-canary.xml"
+}
