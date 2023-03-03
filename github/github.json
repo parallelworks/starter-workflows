@@ -1,6 +1,18 @@
 {
-    "repo": "https://github.com/parallelworks/interactive_session.git",
-    "branch": "main",
-    "dir": "workflow",
-    "xml": "workflow/workflow-canary.xml"
+  "repo": "https://github.com/parallelworks/interactive_session.git",
+  "branch": "main",
+  "xml": "workflow/xmls/openvscode/cloud.xml",
+  "thumbnail": "workflow/thumbnails/gitpod.png",
+  "readme": "workflow/readmes/openvscode/cloud.md",
+  "sparsecheckout": [
+    "openvscode",
+    "utils",
+    "controller",
+    "partition",
+    "platforms",
+    "main.sh",
+    "lib.sh",
+    "service.html.template",
+    "stream.sh"
+  ]
 }
