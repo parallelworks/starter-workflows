@@ -1,5 +1,5 @@
 <tool id='NA' name='NA'>
-  <command interpreter='bash'>004_sample_complex_form/main.sh</command>
+  <command interpreter='bash'>main.sh</command>
   <cancel interpreter='bash'>kill.sh</cancel>
   <inputs>
     <param 
