@@ -1,18 +1,10 @@
 {
-  "repo": "https://github.com/parallelworks/interactive_session.git",
+  "repo": "https://github.com/parallelworks/workflow_tutorial.git",
   "branch": "main",
-  "xml": "workflow/xmls/openvscode/cloud.xml",
-  "thumbnail": "workflow/thumbnails/gitpod.png",
-  "readme": "workflow/readmes/openvscode/cloud.md",
+  "xml": "008_script_submitter/workflow.xml",
+  "thumbnail": "thumbnail.png",
+  "readme": "008_script_submitter/README.md",
   "sparsecheckout": [
-    "openvscode",
-    "utils",
-    "controller",
-    "partition",
-    "platforms",
-    "main.sh",
-    "lib.sh",
-    "service.html.template",
-    "stream.sh"
+    "008_script_submitter"
   ]
 }
